@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-zn*s)8=h#wnt*@v%ib)nsk!-9+h)a9g^uiahr@yh2u8e+&f#4q
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['BeknazarOsh.pythonanywhere.com']
 
 
 # Application definition
@@ -61,7 +61,7 @@ MIDDLEWARE = [
 ]
 
 CORS_ALLOW_ALL_ORIGINS = True
-CORS_ALLOWED_ORIGINS = ["https://example.com", "http://localhost:3000"]
+CORS_ALLOWED_ORIGINS = ["https://example.com", "http://192.168.0.6:3000"]
 
 ROOT_URLCONF = 'crm_project.urls'
 

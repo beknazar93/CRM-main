@@ -1,6 +1,6 @@
 from rest_framework import serializers
 from .models import Employee,Client,SalesPipelineStage
-from django import forms
+
 
 class EmployeeSerializer(serializers.ModelSerializer):
     class Meta:
@@ -11,7 +11,7 @@ class EmployeeSerializer(serializers.ModelSerializer):
 class ClientSerializer(serializers.ModelSerializer):
     class Meta:
         model = Client
-        fields = ['name', 'email', 'phone', 'stage', 'payment', 'price', 'sport_category', 'trainer', 'year',
+        fields = ['id','name', 'email', 'phone','time_create','time_update','stage', 'payment', 'price', 'sport_category', 'trainer', 'year',
                   'month', 'day', 'comment']
 
 
